@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+	<head>		
+		<!-- CSS files -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/pushy.css">		
+		<link rel="stylesheet" type="text/css" href="https://jenil.github.io/bulmaswatch/lux/bulmaswatch.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">	
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">	
+
+		<!-- Webfonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">	
+
+		<!-- Javascript -->
+		<script src="js/crel.min.js"></script>
+		<script src="jquery-3.2.1.min.js"></script>
+		<script src="https://code.highcharts.com/highcharts.src.js"></script>
+		<script src="js/script.js"></script>
+
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="theme-color" content="#ff5b2b">
+
+		<!-- Manifest and favicon -->
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+		<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+	 
+		<!-- This is the title -->
+		<title>Dashboard Demo</title>
+	</head>
+
+	<body>
+	 	<!-- Header -->
+		<header class="nav push header-main">
+			<button class="menu-btn">&#9776; Menu</button>
+
+			<h1>Dashboard</h1>						
+			
+			<div class="nav-left nav-menu">
+				<div class="nav-item"> 
+						<a class="nav-item space-r20">
+							MASCULINO
+						</a>
+						<a class="nav-item space-r20">
+							FEMININO
+						</a>
+						<a class="nav-item space-r20">
+							MENINO
+						</a>
+						<a class="nav-item space-r20">
+							MENINA
+						</a>
+				</div>						
+			</div>
+		</header>
+
+		<!-- Pushy Menu -->
+		<nav class="pushy pushy-left" data-focus="#first-link">
+			<div class="pushy-content">
+				 <ul>
+						<li class="pushy-submenu">
+							<button id="first-link">Submenu 1</button>
+							<ul>
+								 <li class="pushy-link"><a href="#">Item 1</a></li>
+								 <li class="pushy-link"><a href="#">Item 2</a></li>
+								 <li class="pushy-link"><a href="#">Item 3</a></li>
+							</ul>
+						</li>
+						<li class="pushy-submenu">
+							<button>Submenu 2</button>
+							<ul>
+								 <li class="pushy-link"><a href="#">Item 1</a></li>
+								 <li class="pushy-link"><a href="#">Item 2</a></li>
+								 <li class="pushy-link"><a href="#">Item 3</a></li>
+							</ul>
+						</li>
+						<li class="pushy-submenu">
+							<button>Submenu 3</button>
+							<ul>
+								 <li class="pushy-link"><a href="#">Item 1</a></li>
+								 <li class="pushy-link"><a href="#">Item 2</a></li>
+								 <li class="pushy-link"><a href="#">Item 3</a></li>
+							</ul>
+						</li>
+						<li class="pushy-submenu">
+							<button>Submenu 4</button>
+							<ul>
+								 <li class="pushy-link"><a href="#">Item 1</a></li>
+								 <li class="pushy-link"><a href="#">Item 2</a></li>
+								 <li class="pushy-link"><a href="#">Item 3</a></li>
+							</ul>
+						</li>
+						<li class="pushy-link"><a href="#">Item 1</a></li>
+						<li class="pushy-link"><a href="#">Item 2</a></li>
+						<li class="pushy-link"><a href="#">Item 3</a></li>
+						<li class="pushy-link"><a href="#">Item 4</a></li>
+				 </ul>
+			</div>
+		</nav>
+
+		<!-- Site Overlay -->
+		<div class="site-overlay"></div>
+
+		<!-- Content -->
+		<div id="container" class="container">
+			<br/>
+			<!-- 1st row -->
+			<div class="columns">
+				
+				<div class="column">
+					<div class="infopanel box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p class="title is-3 ">$189</p>
+									<p class="subtitle is-6">Profit description</p>
+								</div>						      
+							</div>
+							<div class="media-right">
+								<figure class="image">
+									<i class="fa fa-shopping-cart fa-4x" aria-hidden="true"></i>
+								</figure>
+							</div>
+						</article>
+
+						<br/>
+
+						<progress max="100" value="80" class="progress is-success"></progress>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="infopanel box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p class="title is-3 ">$812</p>
+									<p class="subtitle is-6">Income detail</p>
+								</div>						      
+							</div>
+							<div class="media-right">
+								<figure class="image">
+									<i class="fa fa-money fa-4x" aria-hidden="true"></i>
+								</figure>
+							</div>
+						</article>
+
+						<br/>
+
+						<progress max="100" value="80" class="progress is-info"></progress>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="infopanel box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p class="title is-3 ">155</p>
+									<p class="subtitle is-6">Tasks completed</p>
+								</div>						      
+							</div>
+							<div class="media-right">
+								<figure class="image">
+									<i class="fa fa-signal fa-4x" aria-hidden="true"></i>
+								</figure>
+							</div>
+						</article>
+
+						<br/>
+
+						<progress max="100" value="80" class="progress is-danger"></progress>
+					</div>
+				</div>
+
+				<div class="column">
+					<div class="infopanel box">
+						<article class="media">
+							<div class="media-content">
+								<div class="content">
+									<p class="title is-3 ">376</p>
+									<p class="subtitle is-6">Total visitors</p>
+								</div>						      
+							</div>
+							<div class="media-right">
+								<figure class="image">
+									<i class="fa fa-group fa-4x" aria-hidden="true"></i>
+								</figure>
+							</div>
+						</article>
+
+						<br/>
+
+						<progress max="100" value="80" class="progress is-warning"></progress>
+					</div>
+				</div>
+			</div>
+
+			<!-- 2nd row -->
+			<div class="columns">
+				<div class="column is-8">
+					<div class="infopanel box">
+						<div class="columns">
+							<div class="column is-8">
+								<article class="media">
+									<div class="media-content">
+										<div class="content">
+											<p class="title is-5 is-spaced">Network Performance</p>
+											<p class="subtitle is-6">Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
+
+											<div id="highchart"></div>
+										</div>						      							
+								</article>
+							</div>
+
+							<div class="column">
+								<article class="media">
+									<div class="media-content">
+										<div class="content">
+											<p class="title is-5 is-spaced">Server Status</p>
+
+											<p class="subtitle is-6">CPU Usage (25-32 CPUs)</p>
+											<progress max="100" value="80" class="progress is-info is-small"></progress>
+
+											<p class="subtitle is-6">CPU Usage (25-32 CPUs)</p>
+											<progress max="100" value="80" class="progress is-danger is-small"></progress>
+
+											<p class="subtitle is-6">CPU Usage (25-32 CPUs)</p>
+											<progress max="100" value="80" class="progress is-success is-small"></progress>
+
+											<p class="subtitle is-6">CPU Usage (25-32 CPUs)</p>
+											<progress max="100" value="80" class="progress is-info is-small"></progress>
+
+											<p class="subtitle is-6">CPU Usage (25-32 CPUs)</p>
+											<progress max="100" value="80" class="progress is-warning is-small"></progress>
+
+											<p class="subtitle is-6">CPU Usage (25-32 CPUs)</p>
+											<progress max="100" value="80" class="progress is-success is-small"></progress>
+										</div>						      							
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>				
+
+				<div class="column">
+					<div class="infopanel box">						
+						<div class="chatbox-main">
+							<div class="chatbox-messagebox">
+								<div class="chatbox-message">
+									<div class="chatbox-message-avatar">
+										<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+									</div>
+
+									<div class="chatbox-message-wrapper msgwrap-left">
+										<div class="chatbox-message-timestamp">
+											<a>Admin</a> <i>on July 08, 2017 12:02</i>
+										</div>
+										<div class="chatbox-message-text">
+											Hello this is person
+										</div>
+									</div>
+								</div>
+
+								<div class="chatbox-message  msg-right">
+									<div class="chatbox-message-wrapper msgwrap-right">
+										<div class="chatbox-message-timestamp">
+											<a>Admin</a> <i>on July 08, 2017 12:04</i>
+										</div>
+										<div class="chatbox-message-text">
+											Hello this is two
+										</div>
+									</div>
+
+									<div class="chatbox-message-avatar">
+										<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+									</div>
+								</div>
+
+								<div class="chatbox-message">
+									<div class="chatbox-message-avatar">
+										<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+									</div>
+
+									<div class="chatbox-message-wrapper msgwrap-left">
+										<div class="chatbox-message-timestamp">
+											<a>Admin</a> <i>on July 08, 2017 12:02</i>
+										</div>
+										<div class="chatbox-message-text">
+											Hello this is person
+										</div>
+									</div>
+								</div>
+
+								<div class="chatbox-message msg-right">
+									<div class="chatbox-message-wrapper msgwrap-right">
+										<div class="chatbox-message-timestamp">
+											<a>Admin</a> <i>on July 08, 2017 12:04</i>
+										</div>
+										<div class="chatbox-message-text">
+											Hello this is two
+										</div>
+									</div>
+
+									<div class="chatbox-message-avatar">
+										<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+									</div>
+								</div>
+
+								<div class="chatbox-message">
+									<div class="chatbox-message-avatar">
+										<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+									</div>
+
+									<div class="chatbox-message-wrapper msgwrap-left">
+										<div class="chatbox-message-timestamp">
+											<a>Admin</a> <i>on July 08, 2017 12:02</i>
+										</div>
+										<div class="chatbox-message-text">
+											Hello this is person
+										</div>
+									</div>
+								</div>
+
+								<div class="chatbox-message msg-right">
+									<div class="chatbox-message-wrapper msgwrap-right">
+										<div class="chatbox-message-timestamp">
+											<a>Admin</a> <i>on July 08, 2017 12:04</i>
+										</div>
+										<div class="chatbox-message-text">
+											Hello this is two
+										</div>
+									</div>
+
+									<div class="chatbox-message-avatar">
+										<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+									</div>
+								</div>
+
+								<div class="chatbox-message">
+									<div class="chatbox-message-avatar">
+										<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+									</div>
+
+									<div class="chatbox-message-wrapper msgwrap-left">
+										<div class="chatbox-message-timestamp">
+											<a>Admin</a> <i>on July 08, 2017 12:02</i>
+										</div>
+										<div class="chatbox-message-text">
+											Hello this is person
+										</div>
+									</div>
+								</div>
+
+								<div class="chatbox-message msg-right">
+									<div class="chatbox-message-wrapper msgwrap-right">
+										<div class="chatbox-message-timestamp">
+											<a>Admin</a> <i>on July 08, 2017 12:04</i>
+										</div>
+										<div class="chatbox-message-text">
+											Hello this is two
+										</div>
+									</div>
+
+									<div class="chatbox-message-avatar">
+										<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+									</div>
+								</div>
+
+								<div class="chatbox-message">
+									<div class="chatbox-message-avatar">
+										<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+									</div>
+
+									<div class="chatbox-message-wrapper msgwrap-left">
+										<div class="chatbox-message-timestamp">
+											<a>Admin</a> <i>on July 08, 2017 12:02</i>
+										</div>
+										<div class="chatbox-message-text">
+											Hello this is person
+										</div>
+									</div>
+								</div>
+
+								<div class="chatbox-message msg-right">
+									<div class="chatbox-message-wrapper msgwrap-right">
+										<div class="chatbox-message-timestamp">
+											<a>Admin</a> <i>on July 08, 2017 12:04</i>
+										</div>
+										<div class="chatbox-message-text">
+											Hello this is two
+										</div>
+									</div>
+
+									<div class="chatbox-message-avatar">
+										<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="field has-addons">						
+							    <input class="input" type="text" placeholder="Message" id="input-msg" />				
+							  
+							    <a class="button is-info" id="btn-send-message">
+							      Send
+							    </a>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 3rd row -->
+			<div class="columns">
+				<div class="column is-4">
+					<div class="infopanel box">
+
+						<article class="columns marginbot-2">
+							
+							<div class="column is-8">
+								<div class="content">
+									<p class="title is-3">John Doe</p>
+								</div>
+
+								<p class="marginbot-1"><b>About:</b> Web Designer / UI.</p>
+								<p class="marginbot-1"><b>Hobbies:</b> Read, out with friends, listen to music, draw and learn new things.</p>
+								<div class="">
+									<b>Skills:</b>
+									<div class="tag is-success" style="margin-left: 0.5rem;">html5</div>
+									<div class="tag is-success" style="margin-left: 0.5rem;">css3</div>
+									<div class="tag is-success" style="margin-left: 0.5rem;">jquery</div>
+								</div>
+							</div>
+
+							<div class="column has-text-centered">							
+								<p class="starratings has-text-centered">
+									<img src="img/128.jpg" class="profile-img marginbot-1"/><br/>
+									<a href="#"><span class="fa fa-star"></span></a>
+									<a href="#"><span class="fa fa-star"></span></a>
+									<a href="#"><span class="fa fa-star"></span></a>
+									<a href="#"><span class="fa fa-star"></span></a>
+									<a href="#"><span class="fa fa-star-o"></span></a>
+								</p>
+							</div>
+						</article>
+
+						<nav class="level">
+							<div class="level-item has-text-centered marginbot-1">
+								<div>
+									<p class="title is-spaced is-bold">20,7K</p>
+									<p class="subtitle is-6 marginbot-1">Followers</p>
+									<button class="button is-orange"><span class="fa fa-plus-circle"></span>&nbsp; Follow</button>
+								</div>
+							</div>		
+
+							<div class="level-item has-text-centered marginbot-1">
+								<div>
+									<p class="title is-spaced is-bold">245</p>
+									<p class="subtitle is-6 marginbot-1">Following</p>
+									<button class="button is-darkblue"><span class="fa fa-user"></span>&nbsp; Profile</button>
+								</div>
+							</div>
+
+							<div class="level-item has-text-centered marginbot-1">
+								<div>
+									<p class="title is-spaced is-bold">43</p>
+									<p class="subtitle is-6 marginbot-1">Snippets</p>
+									<button class="button is-yellow"><span class="fa fa-cog"></span>&nbsp; Options</button>
+								</div>
+							</div>					  
+						</nav>
+
+					</div>
+				</div>
+
+				<div class="column">
+				</div>
+			</div>
+		</div>
+
+		<!-- Pushy JS -->
+		<script src="pushy.min.js"></script>
+	</body>
+</html>
