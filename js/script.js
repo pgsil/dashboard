@@ -1,5 +1,7 @@
 $(function () { 
-    var myChart = Highcharts.chart('highchart', {
+
+	/*initialize Highchart*/
+    let myChart = Highcharts.chart('highchart', {
         chart: {
             type: 'areaspline'
         },
@@ -30,8 +32,11 @@ $(function () {
             }
         ]
     });
-
     $(".highcharts-credits").html("");
+
+    Sortable.create(listWithHandle, {
+      animation: 100
+    });
 });
 
 $(document).ready(function(){

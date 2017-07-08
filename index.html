@@ -14,7 +14,10 @@
 		<!-- Javascript -->
 		<script src="js/crel.min.js"></script>
 		<script src="jquery-3.2.1.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.6.0/Sortable.min.js"></script>
 		<script src="https://code.highcharts.com/highcharts.src.js"></script>
+
 		<script src="js/script.js"></script>
 
 		<!-- Meta tags -->
@@ -30,71 +33,111 @@
 		<title>Dashboard Demo</title>
 	</head>
 
-	<body>
-	 	<!-- Header -->
-		<header class="nav push header-main">
-			<button class="menu-btn">&#9776; Menu</button>
+	<body style="user-select: none;">
+		<!-- Header -->
+		<header class="level is-fullwidth push header-main">
 
-			<h1>Dashboard</h1>						
-			
-			<div class="nav-left nav-menu">
-				<div class="nav-item"> 
-						<a class="nav-item space-r20">
-							MASCULINO
-						</a>
-						<a class="nav-item space-r20">
-							FEMININO
-						</a>
-						<a class="nav-item space-r20">
-							MENINO
-						</a>
-						<a class="nav-item space-r20">
-							MENINA
-						</a>
-				</div>						
+			<div class="level-left">				
+					<div class="level">
+						<div class="level-left">						
+							<div class="level-item is-bold dashboard-logo  margin1emLR">Dashboard</div>
+
+							<div class="level-item">
+								<i class="fa fa-bars fa-2x menu-btn margin1emLR" aria-hidden="true"></i>
+
+								<div class="field has-addons no-margin">
+									<p class="control has-icons-left ">
+									    <input class="input" type="email" placeholder="Search here">
+										<span class="icon is-small is-left">
+											<i class="fa fa-search"></i>
+										</span>						
+									</p>
+									<p class="control">
+										<a class="button is-info">
+											Search
+									    </a>
+									</p>
+								</div>	
+							</div>	
+
+							
+						</div>
+					</div>
 			</div>
+
+			<div class="level-right has-text-centered">
+				<div class="level is-mobile headericons">
+					<div class="level-left">
+						<div class="level">
+
+							<div class="level-left mobilemargin-bot1em">
+								<a class="level-item header-icon margin1emLR">
+									<div class="tag is-yellow notification-small" >2</div>
+
+									<i class="fa fa-bell fa-2x" aria-hidden="true"></i>
+								</a>
+
+								<a class="level-item header-icon margin1emLR">
+									<div class="tag is-orange notification-small" >8</div>
+
+									<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+								</a>
+
+								<div class="level-item margin1emLR">
+									<a class=" header-icon">
+										<div class="tag is-success notification-small" >5</div>
+
+										<i class="fa fa-tasks fa-2x" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+
+							<div class="level-right">
+								<a class="level-item header-icon margin1emLR">
+									<img src="img/128.jpg" class="profile-img is-fullwidth" style="height: 50px">
+
+									&nbsp; Robert John &nbsp;
+
+									<i class="fa fa-caret-down" aria-hidden="true"></i>
+								</a>
+								<a class="level-item header-icon margin1emLR">
+									<div class="tag is-info notification-small" >7</div>
+
+									<i class="fa fa-comments fa-2x" aria-hidden="true"></i>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
 		</header>
 
 		<!-- Pushy Menu -->
 		<nav class="pushy pushy-left" data-focus="#first-link">
 			<div class="pushy-content">
 				 <ul>
-						<li class="pushy-submenu">
-							<button id="first-link">Submenu 1</button>
-							<ul>
-								 <li class="pushy-link"><a href="#">Item 1</a></li>
-								 <li class="pushy-link"><a href="#">Item 2</a></li>
-								 <li class="pushy-link"><a href="#">Item 3</a></li>
-							</ul>
-						</li>
-						<li class="pushy-submenu">
-							<button>Submenu 2</button>
-							<ul>
-								 <li class="pushy-link"><a href="#">Item 1</a></li>
-								 <li class="pushy-link"><a href="#">Item 2</a></li>
-								 <li class="pushy-link"><a href="#">Item 3</a></li>
-							</ul>
-						</li>
-						<li class="pushy-submenu">
-							<button>Submenu 3</button>
-							<ul>
-								 <li class="pushy-link"><a href="#">Item 1</a></li>
-								 <li class="pushy-link"><a href="#">Item 2</a></li>
-								 <li class="pushy-link"><a href="#">Item 3</a></li>
-							</ul>
-						</li>
-						<li class="pushy-submenu">
-							<button>Submenu 4</button>
-							<ul>
-								 <li class="pushy-link"><a href="#">Item 1</a></li>
-								 <li class="pushy-link"><a href="#">Item 2</a></li>
-								 <li class="pushy-link"><a href="#">Item 3</a></li>
-							</ul>
-						</li>
-						<li class="pushy-link"><a href="#">Item 1</a></li>
-						<li class="pushy-link"><a href="#">Item 2</a></li>
-						<li class="pushy-link"><a href="#">Item 3</a></li>
-						<li class="pushy-link"><a href="#">Item 4</a></li>
+					<li class="pushy-link"><a href="#">
+					<i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp; Item 1</a>
+					</li>
+					<li class="pushy-link"><a href="#">
+					<i class="fa fa-send-o" aria-hidden="true"></i>&nbsp; Item 2</a>
+					</li>
+					<li class="pushy-link"><a href="#">
+					<i class="fa fa-edit" aria-hidden="true"></i>&nbsp; Item 1</a>
+					</li>
+			
+			
+					<li class="pushy-link"><a href="#"><i class="fa fa-th-list" aria-hidden="true"></i>&nbsp; Item 1</a></li>
+					<li class="pushy-link"><a href="#"><i class="fa fa-database" aria-hidden="true"></i>&nbsp; Item 1</a></li>
+					
+					
+					<li class="pushy-link"><a href="#">Item 1</a></li>
+					<li class="pushy-link"><a href="#">Item 2</a></li>
+					<li class="pushy-link"><a href="#">Item 3</a></li>
+					<li class="pushy-link"><a href="#">Item 4</a></li>
 				 </ul>
 			</div>
 		</nav>
@@ -401,11 +444,11 @@
 							</div>
 
 							<div class="field has-addons">						
-							    <input class="input" type="text" placeholder="Message" id="input-msg" />				
+								<input class="input" type="text" placeholder="Message" id="input-msg" />				
 							  
-							    <a class="button is-info" id="btn-send-message">
-							      Send
-							    </a>						
+								<a class="button is-info" id="btn-send-message">
+								  Send
+								</a>						
 							</div>
 						</div>
 					</div>
@@ -414,6 +457,8 @@
 
 			<!-- 3rd row -->
 			<div class="columns">
+
+				<!-- John Doe -->
 				<div class="column is-4">
 					<div class="infopanel box">
 
@@ -434,9 +479,9 @@
 								</div>
 							</div>
 
-							<div class="column has-text-centered">							
-								<p class="starratings has-text-centered">
-									<img src="img/128.jpg" class="profile-img marginbot-1"/><br/>
+							<div class="column is-4 has-text-centered">							
+								<p class="starratings has-text-centered is-fullwidth">
+									<img src="img/128.jpg" class="profile-img marginbot-1 is-fullwidth"/><br/>
 									<a href="#"><span class="fa fa-star"></span></a>
 									<a href="#"><span class="fa fa-star"></span></a>
 									<a href="#"><span class="fa fa-star"></span></a>
@@ -475,7 +520,46 @@
 					</div>
 				</div>
 
-				<div class="column">
+				<!-- Todo stuff -->
+				<div class="column">					
+					<div class="infopanel box">
+
+						<div class="title is-4">
+							Todo list
+						</div>
+
+						<div id="listWithHandle" class="list-group">
+
+							<div class="list-group-item box level">
+								<div class="level-left">
+									<span class="fa fa-bars" aria-hidden="true"></span>
+									&nbsp; Drag me by the handle!
+								</div>
+							</div>
+
+							<div class="list-group-item box level">
+								<div class="level-left">
+									<span class="fa fa-bars" aria-hidden="true"></span>
+									&nbsp; I'm draggable too!
+								</div>
+							</div>
+
+							<div class="list-group-item box level">
+								<div class="level-left">
+									<span class="fa fa-bars" aria-hidden="true"></span>
+									&nbsp; And so am I!
+								</div>
+							</div>
+
+							<div class="list-group-item box level">
+								<div class="level-left">
+									<span class="fa fa-bars" aria-hidden="true"></span>
+									&nbsp; I wanna be the first item!
+								</div>
+							</div>
+
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

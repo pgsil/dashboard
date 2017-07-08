@@ -1,15 +1,34 @@
 .header-main{
 	background: #252525;
 	color: white;
+	height: 80px;
+}
+@media screen and (max-width: 1000px){
+	.header-main{
+		height: 240px;
+		padding-top: 1em;
+	}
+	.headericons{
+		display: -webkit-inline-box!important;
+		display: -moz-inline-box!important;
+	}
+	.mobilemargin-bot1em{
+		margin-bottom: 1em;
+	}
+	.mobilehidden{
+		display: none;
+	}
 }
 .header-main a{
 	color: white;
 }
 
+/*graph style to fix overflow*/
 #highchart{
 	width: 100%;
 }
 
+/*chatbox styles*/
 .chatbox-messagebox{
 	margin-bottom: 10px;
 	padding: 10px;
@@ -47,21 +66,17 @@
 	color: #d63333;
 	font-weight: bold;
 }
-.marginbot-1{
-	margin-bottom: 1em!important;
-}
-.marginbot-2{
-	margin-bottom: 2em!important;
-}
+
+/*profile photo and star ratings*/
 .profile-img{
 	border-radius: 100%;
-	max-width: 50vw;
 	height: auto;
 }
 .starratings a{
 	color: #ffb300
 }
 
+/*utils*/
 .is-orange{
 	background-color: #ff6a17;
 	color: white;
@@ -79,4 +94,55 @@
 }
 .is-bold{
 	font-weight: bold;
+}
+.no-margin{
+	margin: 0!important;
+}
+.marginbot-1{
+	margin-bottom: 1em!important;
+}
+.marginbot-2{
+	margin-bottom: 2em!important;
+}
+.margin1emLR{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.margin1emL{
+	margin-left: 1em;
+}
+.margin1emR{
+	margin-right: 1em;
+}
+
+/*on the todo list show the right cursor*/
+.list-group-item{
+	cursor: move;
+}
+
+/*header icons and their notifications */
+.header-icon{
+	position: relative;
+}
+.notification-small {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    padding: 2px 6px;
+    color: #ffffff;
+    font-size: .75rem;
+    height: 1.4em;
+    width: 1.4em;
+}
+
+.dashboard-logo {
+    font-size: 2em;
+}
+
+/*side menu items*/
+.pushy-link{
+	border-bottom: 1px solid #2f2f2f;
+}
+.pushy-link:hover{
+	background-color: #666
 }
