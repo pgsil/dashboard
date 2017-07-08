@@ -37,6 +37,24 @@ $(function () {
     Sortable.create(listWithHandle, {
       animation: 100
     });
+
+	let animationFunc = function(){
+		console.log("Start anime run");
+
+		anime({
+			targets: '.progress',
+			value: function(){return anime.random(40, 100)},
+			
+			delay: function(el, i, l) {
+			  return i * 500;
+			},
+			duration: 1500,
+			elasticity: 200,
+			complete: function(){setTimeout(animationFunc, 2000)}
+		});
+	};
+
+	animationFunc();
 });
 
 $(document).ready(function(){
